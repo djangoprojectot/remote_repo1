@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+  {%block body_block%}
+    <div class="continor">
+      <form method="post">
+        <h1>Signup To Enjoy Fecilities</h1><hr>
+        {{form.as_p}}
+        {%csrf_token%}
+            <input type="submit" class="btn btn-primary btn-lg" value="Signup">
+              </form>
+</div>
+
+
+  {%endblock%}
